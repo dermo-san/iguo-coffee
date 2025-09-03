@@ -1,0 +1,31 @@
+/* 渋めワイヤーフレーム用の最小CSS（画像なし） */
+:root{
+  --bg:#0f0f10;
+  --panel:#161617;
+  --ink:#e8e8ea;
+  --muted:#a9a9ad;
+  --line:#2a2a2c;
+  --accent:#c0b49b; /* ほんのり渋い差し色（控えめ）*/
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
+a{color:var(--ink);text-decoration:none}
+a:hover{opacity:.85}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.header{border-bottom:1px solid var(--line);padding:20px 0;margin-bottom:12px}
+.brand{font-size:22px;font-weight:700;letter-spacing:.04em}
+.nav{display:flex;gap:16px;margin-top:8px;flex-wrap:wrap}
+.nav a{padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.nav a[aria-current="page"]{border-color:var(--accent);color:var(--accent)}
+.page-title{font-size:28px;margin:24px 0 8px}
+.subtitle{color:var(--muted);margin-bottom:24px}
+.section{border:1px dashed var(--line);border-radius:12px;padding:16px 16px 12px;background:var(--panel);margin:14px 0}
+.section h2{margin:0 0 8px;font-size:16px;color:var(--accent);letter-spacing:.02em}
+.placeholder{border:1px dashed var(--line);border-radius:8px;padding:12px;color:var(--muted);font-size:14px;background:transparent}
+.list{margin:8px 0 0 0;padding:0;list-style:none}
+.list li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.footer{border-top:1px solid var(--line);color:var(--muted);padding:18px 0;margin-top:32px;font-size:13px}
+.badge{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:8px;align-items:start}
+.note{font-size:13px;color:var(--muted)}
+

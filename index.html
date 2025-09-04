@@ -1,121 +1,84 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wireframe – Coffee</title>
-<style>
-  :root{
-    --bg:#fafafa; --ink:#333; --muted:#888;
-    --line:#cfcfcf; --dash:#bfbfbf; --chip:#eee;
-    --max:1080px;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif}
-  .wrap{max-width:var(--max);margin:0 auto;padding:16px}
-  .topbar{display:flex;align-items:center;justify-content:space-between;border:1px dashed var(--dash);padding:8px 12px;border-radius:10px;margin:8px 0}
-  .chip{display:inline-block;background:var(--chip);border:1px dashed var(--dash);border-radius:999px;padding:6px 10px;font-size:13px;color:var(--muted)}
-  .hero{border:1px dashed var(--dash);border-radius:10px;padding:14px;margin:16px 0}
-  .hero .ph{height:340px;border:1px dashed var(--dash);border-radius:8px;display:grid;place-items:center;color:#aaa;font-size:14px;background:#f3f3f3}
-  h1{margin:.6em 0 .2em 0;font-size:28px}
-  .sub{color:var(--muted);margin:0 0 12px}
-  .ctas{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
-  .cta{border:1px dashed var(--dash);border-radius:999px;padding:6px 12px;background:#fff;font-size:13px;color:#666}
-  .section{border:1px dashed var(--dash);border-radius:10px;padding:14px;margin:16px 0}
-  .section h2{font-size:16px;margin:0 0 8px;color:#666}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-  .card{border:1px dashed var(--dash);border-radius:8px;padding:10px;background:#fff}
-  .card .ph{height:120px;border:1px dashed var(--dash);border-radius:6px;background:#f5f5f5;display:grid;place-items:center;color:#aaa;font-size:12px}
-  .cap{font-size:13px;color:#777;margin-top:6px}
-  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  ul{margin:8px 0 0 18px}
-  table{width:100%;border-collapse:collapse;font-size:14px}
-  td{padding:6px 0;border-bottom:1px dotted var(--line)}
-  .gallery .ph{height:120px}
-  @media (max-width:820px){
-    .grid-3{grid-template-columns:1fr}
-    .grid-2{grid-template-columns:1fr}
-    .hero .ph{height:220px}
-  }
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>イグオコーヒー | トップ（ワイヤー）</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="wrap">
-    <!-- Topbar -->
-    <div class="topbar">
-      <span class="chip">LOGO</span>
-      <div style="display:flex;gap:8px;">
-        <span class="chip">MAP</span>
-        <span class="chip">TEL</span>
-      </div>
-    </div>
+<body class="wire">
+  <div class="container">
+    <header class="header">
+      <div class="brand">イグオコーヒー（仮）</div>
+      <nav class="nav" aria-label="主要ナビ">
+        <a href="index.html" aria-current="page">トップ</a>
+        <a href="menu.html">メニュー</a>
+        <a href="access.html">アクセス</a>
+        <a href="owner.html">店主紹介</a>
+      </nav>
+    </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="ph">HERO IMAGE</div>
-      <h1>H1：ミルクたっぷりカフェオレ</h1>
-      <p class="sub">サブ：こだわりの豆／くつろぎ空間</p>
-      <div class="ctas">
-        <span class="cta">主CTＡ：予約</span>
-        <span class="cta">サブCTＡ：地図</span>
-      </div>
-    </section>
+    <main>
+      <section class="section">
+        <div class="placeholder hero-ph">［HERO：ここに店内の大きな写真（後日差し替え）］</div>
+        <h1 class="page-title">渋みある空間で、たっぷりのカフェオレを。</h1>
+        <p class="subtitle">— 熊本県八代市／ミルクたっぷりカフェオレ・こだわりのコーヒー —</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <span class="badge">主CTA：予約 or 問い合わせ（後日決定）</span>
+          <span class="badge">サブCTA：地図</span>
+        </div>
+      </section>
 
-    <!-- 3つの売り -->
-    <section class="section">
-      <h2>3つの売り</h2>
-      <div class="grid-3">
-        <div class="card">
-          <div class="ph">写真</div>
-          <div class="cap">① ミルクたっぷりカフェオレ</div>
+      <section class="section">
+        <h2>推しポイント（仮）</h2>
+        <div class="card-grid-3">
+          <div class="card">
+            <div class="placeholder ph">［写真枠］</div>
+            <p class="note">① ミルクたっぷりカフェオレ</p>
+          </div>
+          <div class="card">
+            <div class="placeholder ph">［写真枠］</div>
+            <p class="note">② こだわりの豆</p>
+          </div>
+          <div class="card">
+            <div class="placeholder ph">［写真枠］</div>
+            <p class="note">③ くつろぎ空間</p>
+          </div>
         </div>
-        <div class="card">
-          <div class="ph">写真</div>
-          <div class="cap">② こだわりの豆</div>
-        </div>
-        <div class="card">
-          <div class="ph">写真</div>
-          <div class="cap">③ くつろぎ空間</div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 2カラム：メニュー／営業時間 -->
-    <section class="section">
-      <div class="grid-2">
-        <div class="card">
-          <h2>メニュー抜粋</h2>
-          <ul>
-            <li>カフェオレ …… ¥520</li>
-            <li>ハウスブレンド …… ¥480</li>
-            <li>ハニラテ（季節） …… ¥560</li>
+      <section class="section two-col">
+        <div>
+          <h2>メニュー抜粋（仮）</h2>
+          <ul class="list">
+            <li>カフェオレ …… ¥520（仮）</li>
+            <li>ハウスブレンド …… ¥480（仮）</li>
+            <li>季節限定（例：ハニラテ） …… ¥560（仮）</li>
           </ul>
         </div>
-        <div class="card">
-          <h2>営業時間・基本情報</h2>
-          <table>
-            <tr><td>月</td><td style="text-align:right">10:00–18:00</td></tr>
-            <tr><td>火</td><td style="text-align:right">10:00–18:00</td></tr>
-            <tr><td>水</td><td style="text-align:right">定休</td></tr>
-            <tr><td>木</td><td style="text-align:right">10:00–18:00</td></tr>
-            <tr><td>金</td><td style="text-align:right">10:00–18:00</td></tr>
-            <tr><td>土</td><td style="text-align:right">10:00–19:00</td></tr>
-            <tr><td>日・祝</td><td style="text-align:right">10:00–19:00</td></tr>
-          </table>
-          <p class="cap">住所／最寄り／駐車場：あり（2台）／TEL：—</p>
+        <div>
+          <h2>営業時間・基本情報（仮）</h2>
+          <div class="kv">
+            <div class="note">営業時間</div><div>10:00–18:00（例）</div>
+            <div class="note">定休日</div><div>水曜（例）</div>
+            <div class="note">住所</div><div>熊本県八代市◯◯◯</div>
+            <div class="note">駐車場</div><div>有（2台）/ 近隣コインP案内</div>
+            <div class="note">TEL</div><div>（後日）</div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ギャラリー（枠） -->
-    <section class="section gallery">
-      <h2>写真ギャラリー（枠）</h2>
-      <div class="grid-3">
-        <div class="card"><div class="ph">写真</div></div>
-        <div class="card"><div class="ph">写真</div></div>
-        <div class="card"><div class="ph">写真</div></div>
-      </div>
-    </section>
+      <section class="section">
+        <h2>写真ギャラリー（枠）</h2>
+        <div class="card-grid-3">
+          <div class="placeholder ph">［写真］</div>
+          <div class="placeholder ph">［写真］</div>
+          <div class="placeholder ph">［写真］</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© イグオコーヒー（仮）</footer>
   </div>
 </body>
 </html>
